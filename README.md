@@ -4,7 +4,7 @@ IDE: IntelliJ IDEA 2024.2.4 (Community Edition), eclipse, vscode
 강력한 코드 편집기와 디버깅 도구를 제공하여 Spring 개발에 최적화  
 
 Spring Initializr: https://start.spring.io/
---
+
 의존성관리 : maven, gradle  
 Spring Boot: 3.3.5  
 선택 항목:  
@@ -17,7 +17,7 @@ Thymeleaf
 Java: 17 (LTS 버전)  
 최신 기능과 안정성을 제공하는 장기 지원 버전입니다.  
 https://jdk.java.net/17/ (openjdk)  
---
+
 
 2.프로젝트 구성  
 기본적으로 제공되는 index.html이 없을 경우 404 에러 발생  
