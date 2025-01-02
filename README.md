@@ -26,6 +26,7 @@ resources/static/error 폴더에 404.html 추가하여 사용자 에러 페이�
 index.html 생성하여 기본 페이지 설정  
 Controller 생성: Thymeleaf를 사용하여 동적 페이지 접근 확인  
 
+```
 <!DOCTYPE html>  
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -37,6 +38,7 @@ Controller 생성: Thymeleaf를 사용하여 동적 페이지 접근 확인
     <p th:text="${attribute}"></p>
 </body>
 </html>
+```
 
 Thymeleaf는 HTML을 서버에서 동적으로 렌더링합니다.  
 
@@ -64,9 +66,11 @@ Freemarker
 Thymeleaf: 동적 콘텐츠 렌더링에 적합하며, HTML5와 호환성이 좋음  
 https://www.thymeleaf.org  
 사용방법 :  
+```
 <html xmlns:th="http://www.thymeleaf.org" >  
 <!-- <a class="navbar-brand" href="#!">Start Bootstrap</a> -->  
-<a class="navbar-brand" href="#!" th:text="${attribute}" >Start Bootstrap</a>  
+<a class="navbar-brand" href="#!" th:text="${attribute}" >Start Bootstrap</a>
+```
 기본 적인 기능 /spring학습필요/  
 MVC 패턴:  
 Model: 도메인 객체 및 DTO를 통해 비즈니스 데이터를 표현  
@@ -89,7 +93,8 @@ CI/CD: Jenkins, Git 등을 활용하여 지속적 통합 및 배포 프로세스
 3.배포 및 반영  
 내장 톰캣 사용: java -jar ktis.jar 명령어로 애플리케이션 실행  
 WAS: 내장 톰캣  
-Web: Nginx를 통해 정적 파일 서빙 및 리버스 프록시 설정(보안)  
+Web: Nginx를 통해 정적 파일 서빙 및 리버스 프록시 설정(보안)
+```
 server {
     listen 80;  # HTTP 포트
     server_name example.com;  # 도메인 이름
@@ -108,6 +113,7 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;  # 프로토콜 정보 전달
     }
 }
+```
 도메인 관리  
 네임서버에서 도메인 관리 및 IP 주소 확인  
 사용자가 요청한 도메인에 대한 IP 주소를 네임서버에서 찾아서 연결  
