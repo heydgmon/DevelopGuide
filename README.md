@@ -45,12 +45,14 @@ Thymeleaf는 HTML을 서버에서 동적으로 렌더링합니다.
 데이터베이스 연결  
 관계형데이터베이스(h2, mysql, postgresql), nosql(mongoDb) /SQL학습필요/  
 H2 데이터베이스 설정: application.properties에 다음 추가  
+```
 spring.datasource.url=jdbc:h2:mem:testdb  
 spring.datasource.driver-class-name=org.h2.Driver  
 spring.datasource.username=sa  
 spring.datasource.password=  
 spring.h2.console.enabled=true  
-spring.h2.console.path=/h2-console  
+spring.h2.console.path=/h2-console
+```
 기본 데이터 입력  
 프로젝트 실행 시 초기 데이터를 자동으로 입력하기 위해 아래 생성  
 ( data.sql, schema.sql )  
