@@ -81,7 +81,6 @@ Controller: 사용자의 요청을 처리하고 적절한 응답을 반환
 
 Controller(사용자요청받고처리) - service(비즈니스로직처리) - repository(데이터베이스작업) - model(데이터구조정의)  
 권한 관리: Spring Security를 통해 인증 및 권한 관리 기능 구현  
-ktison은 인증처리를 SSO 사용  
 sso:통합로그인(한번의 로그인으로 모든 서비스 접근 장점 )  
 
 로깅: Logback 사용 (logback-spring.xml spring 에서 기본으로 읽는다)  
@@ -122,8 +121,8 @@ server {
 https://xn--c79as89aj0e29b77z.xn--3e0b707e/  
 
 
-예시) ktison-web  
-1)사용자가 ktison.ktis.co.kr 브라우저 요청 -> 해당 도메인의 네임서버 주소를 찾고 -> 네임서버에서 해당 도메인의 ip를 찾는다. -> 그리고 사용자 브라우저에서 ktison.ktis.co.kr을 해당 ip로 이동  
+예시) 
+1)사용자가 kt.co.kr 브라우저 요청 -> 해당 도메인의 네임서버 주소를 찾고 -> 네임서버에서 해당 도메인의 ip를 찾는다. -> 그리고 사용자 브라우저에서 kt.co.kr을 해당 ip로 이동  
 *이때 host를 변경 해서 원하는 도메인으로 변경 테스트 가능  
 
 통신 확인  
